@@ -26,7 +26,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+			<id>1689836993498</id>
+=======
 			<id>1683017027175</id>
+>>>>>>> e7b52714446847068983ae54c14490f8aa703e96
 =======
 			<id>1686817708843</id>
 =======
@@ -60,7 +64,11 @@
 			<type>30</type>
 			<matcher>
 				<id>org.eclipse.core.resources.regexFilterMatcher</id>
+<<<<<<< HEAD
+				<arguments>node_modules|\.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+=======
 				<arguments>node_modules|.git|__CREATED_BY_JAVA_LANGUAGE_SERVER__</arguments>
+>>>>>>> 7a60efe95cc6735fc802e2c5bb8f13fea65b425a
 			</matcher>
 		</filter>
 	</filteredResources>
