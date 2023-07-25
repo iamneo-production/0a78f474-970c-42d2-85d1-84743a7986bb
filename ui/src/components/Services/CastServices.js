@@ -1,6 +1,6 @@
 import axios from 'axios';
-const Cast_API_BASE_URL = "http://localhost:8080/api/cast";
-const Cast_API_BASE_URL2 = "http://localhost:8080/admin/cast";
+const Cast_API_BASE_URL = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/cast";
+const Cast_API_BASE_URL2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/admin/cast";
 class CastServices {
 
     deleteCast(castId, token) {

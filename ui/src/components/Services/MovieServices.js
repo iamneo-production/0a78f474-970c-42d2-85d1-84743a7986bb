@@ -1,8 +1,8 @@
 import axios from 'axios';
-const MOVIE_API_BASE_URL = "http://localhost:8080/api/movies";
-const MOVIE_API_BASE_URL2 = "http://localhost:8080/admin/movies";
-const TRENDING_API = "http://localhost:8080/api/trending"
-const TRENDING_API2 = "http://localhost:8080/admin/trending"
+const MOVIE_API_BASE_URL = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/movies";
+const MOVIE_API_BASE_URL2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/admin/movies";
+const TRENDING_API = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/trending"
+const TRENDING_API2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/admin/trending"
 class MovieService {
 
     getMovies() {

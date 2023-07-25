@@ -18,7 +18,7 @@ import com.example.server.models.ReviewRepository;
 import com.example.server.models.Trending;
 import com.example.server.models.TrendingRepository;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://8081-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io")
 @Controller
 @ResponseBody
 public class TrendingController {

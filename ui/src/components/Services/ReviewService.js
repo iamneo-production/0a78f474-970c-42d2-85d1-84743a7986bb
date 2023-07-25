@@ -1,7 +1,7 @@
 import axios from 'axios';
-const Review_API_BASE_URL1 = "http://localhost:8080/api/reviews";
-const Review_API_BASE_URL2 = "http://localhost:8080/api/reviews";
-const Review_API_BASE_URL3 = "http://localhost:8080/user/reviews";
+const Review_API_BASE_URL1 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/reviews";
+const Review_API_BASE_URL2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/reviews";
+const Review_API_BASE_URL3 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/user/reviews";
 class ReviewService {
 
     getReview(movieId) {
