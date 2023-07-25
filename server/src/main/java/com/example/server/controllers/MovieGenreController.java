@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.movieReview.models.Genre;
-import com.example.movieReview.models.GenreRepository;
+import com.example.server.models.Genre;
+import com.example.server.models.GenreRepository;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @Controller

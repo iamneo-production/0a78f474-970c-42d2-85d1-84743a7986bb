@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.movieReview.models.Movie;
-import com.example.movieReview.models.MovieRepository;
-import com.example.movieReview.models.ReviewRepository;
-import com.example.movieReview.models.Trending;
-import com.example.movieReview.models.TrendingRepository;
+import com.example.server.models.Movie;
+import com.example.server.models.MovieRepository;
+import com.example.server.models.ReviewRepository;
+import com.example.server.models.Trending;
+import com.example.server.models.TrendingRepository;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @Controller

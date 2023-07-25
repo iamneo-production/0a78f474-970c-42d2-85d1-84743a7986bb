@@ -4,13 +4,13 @@ package com.example.server.controllers;
 import org.springframework.stereotype.*;
 import org.springframework.web.bind.annotation.*;
 
-import com.example.movieReview.Exception.ResourceNotFoundException;
-import com.example.movieReview.models.Movie;
-import com.example.movieReview.models.MovieRepository;
-import com.example.movieReview.models.Review;
-import com.example.movieReview.models.ReviewRepository;
-import com.example.movieReview.models.User;
-import com.example.movieReview.models.UserRepository;
+import com.example.server.Exception.ResourceNotFoundException;
+import com.example.server.models.Movie;
+import com.example.server.models.MovieRepository;
+import com.example.server.models.Review;
+import com.example.server.models.ReviewRepository;
+import com.example.server.models.User;
+import com.example.server.models.UserRepository;
 
 import java.time.LocalDate;
 import java.util.*;

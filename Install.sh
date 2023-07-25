@@ -1,21 +1,27 @@
 #!/bin/bash
 
 # Command 1
-echo "Executing Command 1: sudo apt install zip unzip"
+echo "Installing zip and unzip ..."
 sudo apt update
 sudo apt install -y zip unzip
 
 # Command 2
-echo "Executing Command 2: Installing SDKMAN"
+echo "Fetching sdkman and extracting ..."
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Command 3
-echo "Executing Command 3: Installing Java"
+echo "Installing Java ..."
 sdk install java
 
 # Command 4
-echo "Executing Command 4: Installing Spring Boot"
+echo "Installing Spring Boot ..."
 sdk install springboot
+
+# Command 5
+echo "Installing Redis ..."
+sudo apt install redis -y
+sudo service redis-server start
+
 
 # Additional commands can be added as needed

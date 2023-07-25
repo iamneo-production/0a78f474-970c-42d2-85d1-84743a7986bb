@@ -1,4 +1,4 @@
-package com.example.movieReview.models;
+package com.example.server.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

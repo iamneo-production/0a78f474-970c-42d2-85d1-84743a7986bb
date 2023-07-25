@@ -6,11 +6,11 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.movieReview.dto.ReviewDto;
-import com.example.movieReview.models.Review;
-import com.example.movieReview.models.ReviewRepository;
-import com.example.movieReview.models.User;
-import com.example.movieReview.models.UserRepository;
+import com.example.server.dto.ReviewDto;
+import com.example.server.models.Review;
+import com.example.server.models.ReviewRepository;
+import com.example.server.models.User;
+import com.example.server.models.UserRepository;
 
 @Service
 public class ReviewMappingService {

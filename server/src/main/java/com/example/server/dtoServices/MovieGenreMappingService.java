@@ -6,14 +6,14 @@ import java.util.stream.Collectors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.example.movieReview.dto.MovieDto;
-import com.example.movieReview.dto.MovieGenreDto;
-import com.example.movieReview.models.Cast;
-import com.example.movieReview.models.CastRepository;
-import com.example.movieReview.models.Genre;
-import com.example.movieReview.models.GenreRepository;
-import com.example.movieReview.models.Movie;
-import com.example.movieReview.models.ReviewRepository;
+import com.example.server.dto.MovieDto;
+import com.example.server.dto.MovieGenreDto;
+import com.example.server.models.Cast;
+import com.example.server.models.CastRepository;
+import com.example.server.models.Genre;
+import com.example.server.models.GenreRepository;
+import com.example.server.models.Movie;
+import com.example.server.models.ReviewRepository;
 
 @Service
 public class MovieGenreMappingService {
