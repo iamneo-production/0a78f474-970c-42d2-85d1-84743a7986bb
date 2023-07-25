@@ -21,7 +21,6 @@ import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-
 @CrossOrigin(origins = "http://localhost:3000")
 @Controller
 @ResponseBody
