@@ -60,7 +60,7 @@ public class SecurityConfig {
         .cors().and().csrf().disable()
         .authorizeHttpRequests((authorizeRequests) -> authorizeRequests
             .requestMatchers("/api/**").permitAll()
-            .requestMatchers("/admin/**").hasRole("ADMIN")
+            .requestMatchers("/admin/**").hasRole("ADMIN") 
             .requestMatchers("/user/**").hasAnyRole("ADMIN", "USER")
             .anyRequest().authenticated()
 

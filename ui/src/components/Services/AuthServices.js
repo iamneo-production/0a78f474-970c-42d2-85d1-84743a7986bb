@@ -1,6 +1,6 @@
 import axios from "axios";
-const API_URL = "http://localhost:8080/api/";
-const API_URL2 = "http://localhost:8080/user/";
+const API_URL = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/";
+const API_URL2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/user/";
 /*const register = (username,email,password)=>{
     return axios.post(API_URL+"register",{
         username,
