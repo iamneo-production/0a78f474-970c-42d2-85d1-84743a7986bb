@@ -1,8 +1,8 @@
 package com.example.server.auth;
 
-import com.example.movieReview.models.User;
-import com.example.movieReview.models.UserRepository;
-import com.example.movieReview.models.AdminRepository;
+import com.example.server.models.User;
+import com.example.server.models.UserRepository;
+import com.example.server.models.AdminRepository;
 import java.util.*;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.beans.factory.annotation.Autowired;

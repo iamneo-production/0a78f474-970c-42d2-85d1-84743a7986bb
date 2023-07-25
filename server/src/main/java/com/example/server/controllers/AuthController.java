@@ -1,4 +1,4 @@
-package com.example.movieReview.controllers;
+package com.example.server.controllers;
 
 import java.util.Map;
 import java.util.ArrayList;
@@ -30,14 +30,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.movieReview.models.UserRepository;
+import com.example.server.models.UserRepository;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import net.minidev.json.JSONObject;
 
-import com.example.movieReview.config.JwtTokenUtil;
-import com.example.movieReview.models.User;
+import com.example.server.config.JwtTokenUtil;
+import com.example.server.models.User;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @Controller

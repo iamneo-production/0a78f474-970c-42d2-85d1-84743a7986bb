@@ -1,4 +1,4 @@
-package com.example.movieReview.models;
+package com.example.server.models;
 
 import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;

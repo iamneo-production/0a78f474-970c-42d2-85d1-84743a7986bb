@@ -1,4 +1,4 @@
-package com.example.movieReview.models;
+package com.example.server.models;
 
 import org.springframework.data.repository.CrudRepository;
 import java.util.List;

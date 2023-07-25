@@ -1,4 +1,4 @@
-package com.example.movieReview.config;
+package com.example.server.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -18,7 +18,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.example.movieReview.auth.UserDetailsServiceImpl;
+import com.example.server.auth.UserDetailsServiceImpl;
 
 @Configuration
 @EnableWebSecurity
