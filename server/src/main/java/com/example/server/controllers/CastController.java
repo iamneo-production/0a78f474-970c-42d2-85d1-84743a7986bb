@@ -15,13 +15,13 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.movieReview.Exception.ResourceNotFoundException;
-import com.example.movieReview.dto.MovieDto;
-import com.example.movieReview.dtoServices.MovieMappingService;
-import com.example.movieReview.models.Cast;
-import com.example.movieReview.models.CastRepository;
-import com.example.movieReview.models.Movie;
-import com.example.movieReview.models.MovieRepository;
+import com.example.server.Exception.ResourceNotFoundException;
+import com.example.server.dto.MovieDto;
+import com.example.server.dtoServices.MovieMappingService;
+import com.example.server.models.Cast;
+import com.example.server.models.CastRepository;
+import com.example.server.models.Movie;
+import com.example.server.models.MovieRepository;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @Controller
