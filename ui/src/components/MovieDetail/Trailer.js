@@ -1,7 +1,8 @@
 import React from 'react';
 import YouTube from 'react-youtube';
 
-const Trailer = ({ videoId, height, width }) => {
+const Trailer = ({ videoId, height }) => {
+  const width = '100%';
   const opts = {
     height: height,
     width: width,

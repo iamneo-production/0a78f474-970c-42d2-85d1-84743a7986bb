@@ -23,7 +23,7 @@ import com.example.server.models.CastRepository;
 import com.example.server.models.Movie;
 import com.example.server.models.MovieRepository;
 
-@CrossOrigin(origins = "https://8081-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io")
+@CrossOrigin(origins =  {"${MY_APP_BASE_URL}"})
 @Controller
 @ResponseBody
 public class CastController {

@@ -39,7 +39,7 @@ import net.minidev.json.JSONObject;
 import com.example.server.config.JwtTokenUtil;
 import com.example.server.models.User;
 
-@CrossOrigin(origins = "https://8081-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io")
+@CrossOrigin(origins =  {"${MY_APP_BASE_URL}"})
 @Controller
 @ResponseBody
 public class AuthController {

@@ -34,37 +34,8 @@ const MovieForm = (props) => {
   const [editMode, setEditMode] = useState(false);
   const [editModeIndex, setEditModeIndex] = useState(-1);
   const [unit, setUnit] = useState("");
-
-
-  useEffect(() => {
-
-    if (movieData.id === '_add') {
-      return;
-    }
-    else {
-      MovieServices.getMovieById(movieData.id).then((res) => {
-        let existingMovieData = res.data;
-        setMovieData({
-          title: existingMovieData.title,
-          director: existingMovieData.director,
-          producer: existingMovieData.producer,
-          motionPictureRating: existingMovieData.motionPictureRating,
-          movieDesc: existingMovieData.movieDesc,
-          casts: [],
-          genres: [],
-          trailerId: existingMovieData.trailerId,
-          genreId: existingMovieData.genreId,
-          runtime: existingMovieData.runtime,
-          collection: existingMovieData.collection,
-          language: existingMovieData.language,
-          posterUrl: existingMovieData.posterUrl,
-          releaseDate: existingMovieData.releaseDate
-        })
-      })
-    }
-  }, [])
-
-  const data = [
+  const [genresFromApi,setGenresFromApi] = useState([]); //added
+  const [data,setData]= useState([
     { value: "action", label: "Action" },
     { value: "adventure", label: "Adventure" },
     { value: "animation", label: "Animation" },
@@ -84,7 +55,76 @@ const MovieForm = (props) => {
     { value: "biographical", label: "Biographical" },
     { value: "documentary", label: "Documentary" },
     { value: "sports", label: "Sports" },
-  ];
+  ]);
+
+  useEffect(() => {
+
+    if (movieData.id === '_add') {
+      return;
+    }
+    else {
+      MovieServices.getMovieById(movieData.id).then((res) => {
+        let existingMovieData = res.data;
+        const collectionValue =existingMovieData.collection.split(' ')[0];
+        setMovieData({
+          title: existingMovieData.title,
+          director: existingMovieData.director,
+          producer: existingMovieData.producer,
+          motionPictureRating: existingMovieData.motionPictureRating,
+          movieDesc: existingMovieData.movieDesc,
+          casts: [],
+          genres: [],
+          trailerId: existingMovieData.trailerId,
+          genreId: existingMovieData.genreId,
+          runtime: existingMovieData.runtime,
+          collection: collectionValue,
+          language: existingMovieData.language,
+          posterUrl: existingMovieData.posterUrl,
+          releaseDate: existingMovieData.releaseDate
+        })
+        setGenresFromApi(existingMovieData.genres)
+      })
+    }
+  }, [])
+
+  /*const data = [
+    { value: "action", label: "Action" },
+    { value: "adventure", label: "Adventure" },
+    { value: "animation", label: "Animation" },
+    { value: "comedy", label: "Comedy" },
+    { value: "crime", label: "Crime" },
+    { value: "drama", label: "Drama" },
+    { value: "fantasy", label: "Fantasy" },
+    { value: "horror", label: "Horror" },
+    { value: "musical", label: "Musical" },
+    { value: "mystery", label: "Mystery" },
+    { value: "romance", label: "Romance" },
+    { value: "science_fiction", label: "Science Fiction" },
+    { value: "thriller", label: "Thriller" },
+    { value: "war", label: "War" },
+    { value: "western", label: "Western" },
+    { value: "historical", label: "Historical" },
+    { value: "biographical", label: "Biographical" },
+    { value: "documentary", label: "Documentary" },
+    { value: "sports", label: "Sports" },
+  ];*/
+
+  useEffect(() => {//added
+    const filteredOptions = getFilteredOptions();
+    setData(filteredOptions);
+    //console.log(filteredOptions)
+  }, [genresFromApi]); 
+
+console.log(data)
+const getExistingGenresValues = () => {//added
+  return genresFromApi.map((genre) => genre.category);
+};
+
+const getFilteredOptions = () => { //added
+  const existingGenresValues = getExistingGenresValues();
+ // console.log(existingGenresValues);
+  return data.filter((genre) => !existingGenresValues.includes(genre.value));
+};
 
 
   const handleGenreChange = (selectedOptions) => {

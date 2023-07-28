@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.example.server.models.Genre;
 import com.example.server.models.GenreRepository;
 
-@CrossOrigin(origins = "https://8081-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io")
+@CrossOrigin(origins =  {"${MY_APP_BASE_URL}"})
 @Controller
 @ResponseBody
 public class MovieGenreController {

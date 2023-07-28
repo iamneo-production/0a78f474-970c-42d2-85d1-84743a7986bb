@@ -1,8 +1,8 @@
 import axios from 'axios';
-const MOVIE_API_BASE_URL = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/movies";
-const MOVIE_API_BASE_URL2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/admin/movies";
-const TRENDING_API = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/trending"
-const TRENDING_API2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/admin/trending"
+const MOVIE_API_BASE_URL = `${process.env.REACT_APP_API_URL}api/movies`;
+const MOVIE_API_BASE_URL2 = `${process.env.REACT_APP_API_URL}admin/movies`;
+const TRENDING_API = `${process.env.REACT_APP_API_URL}api/trending`;
+const TRENDING_API2 = `${process.env.REACT_APP_API_URL}admin/trending`;
 class MovieService {
 
     getMovies() {
