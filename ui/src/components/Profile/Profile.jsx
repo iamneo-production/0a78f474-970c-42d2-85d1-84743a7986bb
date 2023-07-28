@@ -98,7 +98,7 @@ const Profile = () => {
                                         disabled
                                     />
                                     <br />
-                                    <a href="#"> Reset Password?</a>
+                                   {/* <a href="#"> Reset Password?</a>*/}
                                     {/*  </div>
                  <div className="col m-2 fs-5">
                 <label>Password</label>

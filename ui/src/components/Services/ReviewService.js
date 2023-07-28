@@ -1,7 +1,7 @@
 import axios from 'axios';
-const Review_API_BASE_URL1 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/reviews";
-const Review_API_BASE_URL2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/reviews";
-const Review_API_BASE_URL3 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/user/reviews";
+const Review_API_BASE_URL1 = `${process.env.REACT_APP_API_URL}api/reviews`;
+const Review_API_BASE_URL2 = `${process.env.REACT_APP_API_URL}api/reviews`;
+const Review_API_BASE_URL3 = `${process.env.REACT_APP_API_URL}user/reviews`;
 class ReviewService {
 
     getReview(movieId) {

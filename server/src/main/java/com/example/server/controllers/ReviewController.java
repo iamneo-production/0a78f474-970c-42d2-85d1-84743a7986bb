@@ -22,7 +22,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 
-@CrossOrigin(origins = "https://8081-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io")
+@CrossOrigin(origins =  {"${MY_APP_BASE_URL}"})
 @Controller
 @ResponseBody
 public class ReviewController {
@@ -135,7 +135,8 @@ public class ReviewController {
         User user = userRepository.findByUserName(userDetails.getUsername()).get(0);
 
         for (Review rv : reviews) {
-            if (user != null) {
+            User _user = userRepository.findById(rv.getUserId()).get();
+            if (_user != null && _user.getUserId().equals(user.getUserId())) {
                 rv.setMovieId(rv.getMovie().getMovieId());
                 rv.setUsername(user.getUserName());
                 results.add(rv);

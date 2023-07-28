@@ -124,7 +124,7 @@ const MovieDetailPage = () => {
             >
                 <div className="box-main">
                     <div className="row align-items-stretch">
-                        <div className="col-md-6 " style={{ width: '660px' }}>
+                    <div className="col-md-4 col-sm-12">
                             <div style={{
                                 backgroundImage: `url(${moviedata.posterUrl})`,
                                 backgroundRepeat: "no-repeat",
@@ -138,7 +138,7 @@ const MovieDetailPage = () => {
                                 flexDirection: "column",
                                 justifyContent: "space-between",
                                 height: "450px",
-                                width: "500px"
+                                width: "100%"
                             }}>
 
                                 <div className="detail-box" style={{ backgroundColor: 'rgba(0,0,0,0.8)' }}>
@@ -170,24 +170,13 @@ const MovieDetailPage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6 d-flex ">
-                            <div
-
-                                style={{
-                                    height: '100%', // Adjust the height as per your requirement
-
-                                    width: '100%',
-                                    display: 'flex',
-                                    alignItems: 'left',
-                                    justifyContent: 'right',
-
-                                }}
-                            >
-                                <div className="trailer-container" >
-                                    <Trailer videoId={moviedata.trailerId} height="450px" width="800px" />
-                                </div>
-                            </div>
-                        </div>
+                        <div className="col-md-8 col-sm-12">
+                           
+                           <div className="trailer-container" style={{ width: '100%', height: '100%' }} >
+                               <Trailer videoId={moviedata.trailerId} height="450px"  />
+                           </div>
+                       </div>
+                  
                     </div>
                     <div className="row-padding" style={{ textAlign: "left" }}>
                         <span>Plot Summary:</span>

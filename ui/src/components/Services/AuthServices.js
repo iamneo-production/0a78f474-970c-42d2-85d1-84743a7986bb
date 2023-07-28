@@ -1,6 +1,6 @@
 import axios from "axios";
-const API_URL = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/api/";
-const API_URL2 = "https://8080-fbecdbbdadebcceabbaeaeaadbdbabf.project.examly.io/user/";
+const API_URL = `${process.env.REACT_APP_API_URL}api/`;
+const API_URL2 = `${process.env.REACT_APP_API_URL}user/`;
 /*const register = (username,email,password)=>{
     return axios.post(API_URL+"register",{
         username,
